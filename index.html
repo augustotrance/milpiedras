@@ -35,16 +35,16 @@
             min-height: 500px;
             overflow: hidden;
         }
-        
+       
         .hero-video video {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
+            width: 100%;    /* Asegura que el video tome el 100% del ancho del contenedor */
+            height: 100%;   /* Asegura que el video tome el 100% del alto del contenedor */
+            object-fit: cover; /* ¡Esta es la clave! Cubre el área manteniendo el aspecto y recortando lo que sobra */
+            object-position: center; /* Asegura que el centro del video siempre esté visible */
             z-index: 0;
         }
         
