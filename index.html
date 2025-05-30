@@ -1,0 +1,1807 @@
+﻿<!DOCTYPE html>
+<html lang="es"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate-key="page_title">Cabañas Mil Piedras - Alojamiento en Potrerillos, Mendoza</title>
+    <meta name="description" data-translate-key="meta_description" content="Disfruta de nuestras cabañas de tronco en Potrerillos, Mendoza. Cabañas totalmente equipadas con vista a la montaña y arroyo. Piscina, parrillas y naturaleza.">
+    <meta name="keywords" data-translate-key="meta_keywords" content="cabañas Potrerillos, alojamiento Mendoza, cabañas de tronco, vacaciones en la montaña, turismo Potrerillos, cabañas con pileta">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap');
+        
+        :root {
+            --primary: #8B5A2B;
+            --secondary: #5E3A1F;
+            --accent: #A67C52;
+            --light: #F5EFE6;
+            --dark: #2C1E12;
+        }
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--secondary);
+        }
+        
+        .hero-video {
+            position: relative;
+            height: 100vh;
+            min-height: 500px;
+            overflow: hidden;
+        }
+        
+        .hero-video video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+        
+        .cabin-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .cabin-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .activity-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%;
+        }
+        
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        
+        .booking-form input, 
+        .booking-form select, 
+        .booking-form textarea {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid var(--accent);
+        }
+        
+        .booking-form input:focus, 
+        .booking-form select:focus, 
+        .booking-form textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(139, 90, 43, 0.3);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            transform: translateY(-2px);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            bottom: -10px;
+            left: 25%;
+            background-color: var(--accent);
+        }
+        
+        .testimonial-card {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-left: 4px solid var(--primary);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content {
+                padding-top: 100px;
+            }
+            
+            .hero-video {
+                height: 80vh;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <div class="w-12 h-12 bg-cover bg-center rounded-full border-2 border-amber-900" style="background-image: url('https://www.argentinaturismo.com.ar/milpiedras/img-cliente//12.jpg')"></div>
+                <span class="ml-3 text-2xl font-bold text-amber-900 font-serif" data-translate-key="brand_name">Cabañas Mil Piedras</span>
+            </a>
+            
+            <nav class="hidden md:flex space-x-6 items-center">
+                <a href="#inicio" class="nav-link text-amber-900 hover:text-amber-700" data-translate-key="nav_inicio">Inicio</a>
+                <a href="#cabanas" class="nav-link text-amber-900 hover:text-amber-700" data-translate-key="nav_cabanas">Cabañas</a>
+                <a href="#complejo" class="nav-link text-amber-900 hover:text-amber-700" data-translate-key="nav_complejo">Complejo</a>
+                <a href="#actividades" class="nav-link text-amber-900 hover:text-amber-700" data-translate-key="nav_actividades">Actividades</a>
+                <a href="#ubicacion" class="nav-link text-amber-900 hover:text-amber-700" data-translate-key="nav_ubicacion">Ubicación</a>
+                <a href="#contacto" class="nav-link text-amber-900 hover:text-amber-700" data-translate-key="nav_contacto">Contacto</a>
+                 <div class="flex items-center space-x-1 border-l border-amber-300 pl-4 ml-2">
+                    <button id="lang-es" class="px-2 py-1 text-sm rounded hover:bg-amber-100 focus:outline-none text-amber-900">ES</button>
+                    <span class="text-amber-300">|</span>
+                    <button id="lang-en" class="px-2 py-1 text-sm rounded hover:bg-amber-100 focus:outline-none text-amber-900">EN</button>
+                </div>
+            </nav>
+            
+            <div class="md:hidden flex items-center">
+                 <div class="flex items-center space-x-1 mr-2">
+                    <button id="lang-es-mobile" class="px-2 py-1 text-sm rounded hover:bg-amber-100 focus:outline-none text-amber-900">ES</button>
+                    <span class="text-amber-300">|</span>
+                    <button id="lang-en-mobile" class="px-2 py-1 text-sm rounded hover:bg-amber-100 focus:outline-none text-amber-900">EN</button>
+                </div>
+                <button id="menu-toggle" class="text-amber-900 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#inicio" class="block px-3 py-2 text-amber-900 hover:bg-amber-50 rounded-md" data-translate-key="nav_inicio_mobile">Inicio</a>
+                <a href="#cabanas" class="block px-3 py-2 text-amber-900 hover:bg-amber-50 rounded-md" data-translate-key="nav_cabanas_mobile">Cabañas</a>
+                <a href="#complejo" class="block px-3 py-2 text-amber-900 hover:bg-amber-50 rounded-md" data-translate-key="nav_complejo_mobile">Complejo</a>
+                <a href="#actividades" class="block px-3 py-2 text-amber-900 hover:bg-amber-50 rounded-md" data-translate-key="nav_actividades_mobile">Actividades</a>
+                <a href="#ubicacion" class="block px-3 py-2 text-amber-900 hover:bg-amber-50 rounded-md" data-translate-key="nav_ubicacion_mobile">Ubicación</a>
+                <a href="#contacto" class="block px-3 py-2 text-amber-900 hover:bg-amber-50 rounded-md" data-translate-key="nav_contacto_mobile">Contacto</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero-video">
+        <video autoplay muted loop playsinline>
+            <source src="C:\Users\SANDRA\Documents\Sebastian\- CREA -\paginas_web\mil_piedras\video_portada.mp4" type="video/mp4">
+            <span data-translate-key="hero_video_error">Your browser does not support HTML5 video.</span>
+        </video>
+        <div class="hero-overlay"></div>
+        
+        <div class="relative z-10 h-full flex items-center justify-center">
+            <div class="hero-content text-center px-4 max-w-4xl">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6" data-translate-key="hero_title">Descubre la magia de Potrerillos</h1>
+                <p class="text-xl md:text-2xl text-white mb-8" data-translate-key="hero_subtitle">Cabañas de troncos y piedras con vista a las montañas y el arroyo. Experiencia única en contacto con la naturaleza.</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#reservas" class="btn-primary px-8 py-3 rounded-full text-white font-semibold text-lg shadow-lg" data-translate-key="hero_button_reservar">
+                        <i class="fas fa-calendar-check mr-2"></i> Reservar ahora
+                    </a>
+                    <a href="#cafe" class="bg-white/20 px-8 py-3 rounded-full text-white font-semibold text-lg border-2 border-white hover:bg-white/30 transition" data-translate-key="hero_button_cafe">
+                        <i class="fas fa-coffee mr-2"></i> Conoce nuestro café
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 rounded-lg bg-white shadow-sm hover:shadow-md transition">
+                    <div class="text-4xl text-amber-700 mb-4">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-amber-900 mb-2" data-translate-key="feature1_title">Vistas impresionantes</h3>
+                    <p class="text-gray-700" data-translate-key="feature1_desc">Disfruta de panorámicas únicas de la Cordillera de los Andes desde tu cabaña.</p>
+                </div>
+                
+                <div class="text-center p-6 rounded-lg bg-white shadow-sm hover:shadow-md transition">
+                    <div class="text-4xl text-amber-700 mb-4">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-amber-900 mb-2" data-translate-key="feature2_title">Hogar a leña</h3>
+                    <p class="text-gray-700" data-translate-key="feature2_desc">Calidez y ambiente acogedor con nuestro hogar a leña en cada cabaña.</p>
+                </div>
+                
+                <div class="text-center p-6 rounded-lg bg-white shadow-sm hover:shadow-md transition">
+                    <div class="text-4xl text-amber-700 mb-4">
+                        <i class="fas fa-swimming-pool"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-amber-900 mb-2" data-translate-key="feature3_title">Piscina con vista</h3>
+                    <p class="text-gray-700" data-translate-key="feature3_desc">Refréscate en nuestra piscina con vistas al paisaje mendocino.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cabanas" class="py-10 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-3xl md:text-4xl font-bold text-amber-900" data-translate-key="cabanas_section_title">Nuestras Cabañas</h2>
+                <p class="mt-6 text-lg text-gray-700 max-w-3xl mx-auto" data-translate-key="cabanas_section_subtitle">Dos cabañas idénticas construidas en tronco, piedra and madera, diseñadas para brindar confort en medio de la naturaleza.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="cabin-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative h-64 md:h-80 overflow-hidden">
+                        <img src="https://www.argentinaturismo.com.ar/milpiedras/img-cliente//06.jpg" 
+                             data-translate-key="alt_cabana_mil_piedras"
+                             alt="Cabaña de troncos Mil Piedras" 
+                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <div class="absolute top-4 right-4 bg-amber-700 text-white px-3 py-1 rounded-full text-sm font-semibold" data-translate-key="cabana1_capacity">
+                            Capacidad: 6 personas
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-amber-900 mb-4" data-translate-key="cabana1_title">Cabaña Los Troncos</h3>
+                        
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="flex items-center">
+                                <i class="fas fa-bed text-amber-700 mr-2"></i>
+                                <span data-translate-key="cabana_bedrooms">3 dormitorios</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-bath text-amber-700 mr-2"></i>
+                                <span data-translate-key="cabana_bathroom">Baño privado</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-utensils text-amber-700 mr-2"></i>
+                                <span data-translate-key="cabana_kitchen">Cocina equipada</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-tv text-amber-700 mr-2"></i>
+                                <span data-translate-key="cabana_tv">TV satelital</span>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-700 mb-6" data-translate-key="cabana1_desc">Amplia cabaña de 65m² con terraza privada, parrilla y solárium. Distribución: 1 dormitorio matrimonial, 1 dormitorio con cucheta y cama simple, y sofá cama en living.</p>
+                        
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-amber-900">$12.500</span>
+                                <span class="text-gray-600" data-translate-key="cabana_price_suffix">/noche (temporada baja)</span>
+                            </div>
+                            <a href="#reservas" class="btn-primary px-6 py-2 rounded-full text-white font-semibold text-sm shadow" data-translate-key="cabana_button_reservar">
+                                Reservar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cabin-card bg-white rounded-xl overflow-hidden shadow-lg">
+                    <div class="relative h-64 md:h-80 overflow-hidden">
+                        <img src="https://www.argentinaturismo.com.ar/milpiedras/img-cliente//07.jpg" 
+                             data-translate-key="alt_cabana_mil_piedras_2"
+                             alt="Cabaña de troncos Mil Piedras" 
+                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <div class="absolute top-4 right-4 bg-amber-700 text-white px-3 py-1 rounded-full text-sm font-semibold" data-translate-key="cabana2_capacity">
+                            Capacidad: 6 personas
+                        </div>
+                    </div>
+                    
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-amber-900 mb-4" data-translate-key="cabana2_title">Cabaña Las Piedras</h3>
+                        
+                        <div class="grid grid-cols-2 gap-4 mb-6">
+                            <div class="flex items-center">
+                                <i class="fas fa-bed text-amber-700 mr-2"></i>
+                                <span data-translate-key="cabana_bedrooms_2">3 dormitorios</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-bath text-amber-700 mr-2"></i>
+                                <span data-translate-key="cabana_bathroom_2">Baño privado</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-utensils text-amber-700 mr-2"></i>
+                                <span data-translate-key="cabana_kitchen_2">Cocina equipada</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-tv text-amber-700 mr-2"></i>
+                                <span data-translate-key="cabana_tv_2">TV satelital</span>
+                            </div>
+                        </div>
+                        
+                        <p class="text-gray-700 mb-6" data-translate-key="cabana2_desc">Hermosa cabaña de 65m² con vista al arroyo, terraza con parrilla y solárium. Distribución: 1 dormitorio matrimonial, 1 dormitorio con cucheta y cama simple, y sofá cama en living.</p>
+                        
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="text-2xl font-bold text-amber-900">$12.500</span>
+                                <span class="text-gray-600" data-translate-key="cabana_price_suffix_2">/noche (temporada baja)</span>
+                            </div>
+                            <a href="#reservas" class="btn-primary px-6 py-2 rounded-full text-white font-semibold text-sm shadow" data-translate-key="cabana_button_reservar_2">
+                                Reservar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-amber-50 rounded-xl p-8">
+                <h3 class="text-2xl font-bold text-amber-900 mb-4" data-translate-key="services_included_title">Servicios incluidos</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-amber-700 mt-1 mr-3"></i>
+                        <div>
+                            <h4 class="font-semibold text-amber-900" data-translate-key="service_kitchen_title">Cocina completa</h4>
+                            <p class="text-gray-700 text-sm" data-translate-key="service_kitchen_desc">Heladera, cocina, microondas, vajilla completa y utensilios de cocina.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-amber-700 mt-1 mr-3"></i>
+                        <div>
+                            <h4 class="font-semibold text-amber-900" data-translate-key="service_bedding_title">Ropa de cama</h4>
+                            <p class="text-gray-700 text-sm" data-translate-key="service_bedding_desc">Sábanas, mantas y toallas incluidas para todos los huéspedes.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-amber-700 mt-1 mr-3"></i>
+                        <div>
+                            <h4 class="font-semibold text-amber-900" data-translate-key="service_heating_title">Calefacción</h4>
+                            <p class="text-gray-700 text-sm" data-translate-key="service_heating_desc">Hogar a leña (incluye leña) y calefactores eléctricos.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-amber-700 mt-1 mr-3"></i>
+                        <div>
+                            <h4 class="font-semibold text-amber-900" data-translate-key="service_wifi_title">Wi-Fi</h4>
+                            <p class="text-gray-700 text-sm" data-translate-key="service_wifi_desc">Internet gratuito en toda la propiedad.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-amber-700 mt-1 mr-3"></i>
+                        <div>
+                            <h4 class="font-semibold text-amber-900" data-translate-key="service_parking_title">Estacionamiento</h4>
+                            <p class="text-gray-700 text-sm" data-translate-key="service_parking_desc">Lugar para estacionar comodamente por cabaña.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <i class="fas fa-check-circle text-amber-700 mt-1 mr-3"></i>
+                        <div>
+                            <h4 class="font-semibold text-amber-900" data-translate-key="service_grill_title">Parrilla</h4>
+                            <p class="text-gray-700 text-sm" data-translate-key="service_grill_desc">Parrilla individual en cada cabaña con utensilios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservas" class="py-20 bg-amber-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-3xl md:text-4xl text-amber-200 font-bold" data-translate-key="reservas_section_title">Reservas Online</h2>
+                <p class="mt-6 text-lg max-w-3xl mx-auto" data-translate-key="reservas_section_subtitle">Consulta disponibilidad y reserva tu estadía directamente desde nuestro sistema.</p>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="p-8 booking-form">
+                        <h3 class="text-2xl font-bold text-amber-900 mb-6" data-translate-key="booking_form_title">Solicitud de Reserva</h3>
+                        
+                        <form>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="fecha-llegada" class="block text-gray-700 mb-2" data-translate-key="form_arrival_date">Fecha de llegada</label>
+                                    <input type="date" id="fecha-llegada" class="w-full px-4 py-2 text-gray-700 rounded-lg">
+                                </div>
+                                <div>
+                                    <label for="fecha-salida" class="block text-gray-700 mb-2" data-translate-key="form_departure_date">Fecha de salida</label>
+                                    <input type="date" id="fecha-salida" class="w-full px-4 py-2 text-gray-700 rounded-lg">
+                                </div>
+                                <div>
+                                    <label for="cabaña" class="block text-gray-700 mb-2" data-translate-key="form_cabin">Cabaña</label>
+                                    <select id="cabaña" class="w-full px-4 py-2 text-gray-700 rounded-lg">
+                                        <option value="" data-translate-key="form_select_cabin_option">Seleccionar cabaña</option>
+                                        <option value="troncos" data-translate-key="form_cabin_option_troncos">Los Troncos</option>
+                                        <option value="piedras" data-translate-key="form_cabin_option_piedras">Las Piedras</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="personas" class="block text-gray-700 mb-2" data-translate-key="form_persons">Personas</label>
+                                    <select id="personas" class="w-full px-4 py-2 text-gray-700 rounded-lg">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6">
+                                <label for="nombre" class="block text-gray-700 mb-2" data-translate-key="form_full_name">Nombre completo</label>
+                                <input type="text" id="nombre" class="w-full px-4 py-2 text-gray-700 rounded-lg" data-translate-key="form_full_name_placeholder" placeholder="">
+                            </div>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                                <div>
+                                    <label for="email" class="block text-gray-700 mb-2" data-translate-key="form_email">Email</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 text-gray-700 rounded-lg" data-translate-key="form_email_placeholder" placeholder="">
+                                </div>
+                                <div>
+                                    <label for="telefono" class="block text-gray-700 mb-2" data-translate-key="form_phone">Teléfono</label>
+                                    <input type="tel" id="telefono" class="w-full px-4 py-2 text-gray-700 rounded-lg" data-translate-key="form_phone_placeholder" placeholder="">
+                                </div>
+                            </div>
+                            
+                            <div class="mt-6">
+                                <label for="mensaje" class="block text-gray-700 mb-2" data-translate-key="form_message">Mensaje adicional</label>
+                                <textarea id="mensaje" rows="3" class="w-full px-4 py-2 text-gray-700 rounded-lg" data-translate-key="form_message_placeholder" placeholder=""></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary w-full mt-8 py-3 rounded-lg text-white font-semibold text-lg shadow-lg" data-translate-key="form_submit_button">
+                                Consultar disponibilidad
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="bg-amber-800 p-8 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold text-amber-200 mb-6" data-translate-key="promotions_title">Promociones</h3>
+                            
+                            <div class="space-y-4">
+                                <div class="bg-white/10 p-4 rounded-lg">
+                                    <h4 class="text-amber-200 font-bold" data-translate-key="promo1_title">Estadía larga</h4>
+                                    <p class="text-sm" data-translate-key="promo1_desc">15% de descuento en reservas de 7 noches o más.</p>
+                                </div>
+                                <div class="bg-white/10 p-4 rounded-lg">
+                                    <h4 class="text-amber-200 font-bold" data-translate-key="promo2_title">Temporada baja</h4>
+                                    <p class="text-sm" data-translate-key="promo2_desc">Tarifas especiales de marzo a noviembre (excepto vacaciones de invierno).</p>
+                                </div>
+                                <div class="bg-white/10 p-4 rounded-lg">
+                                    <h4 class="text-amber-200 font-bold" data-translate-key="promo3_title">Pack aventura</h4>
+                                    <p class="text-sm" data-translate-key="promo3_desc">Incluye cabalgata guiada y descuento en Termas de Cacheuta.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-bold text-amber-200 mb-4" data-translate-key="policies_title">Políticas</h4>
+                            <ul class="text-sm space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle mt-1 mr-2 text-amber-300"></i>
+                                    <span data-translate-key="policy_checkin">Check-in: 12:00 a 22:00 hs</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle mt-1 mr-2 text-amber-300"></i>
+                                    <span data-translate-key="policy_checkout">Check-out: hasta 10:00 hs</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle mt-1 mr-2 text-amber-300"></i>
+                                    <span data-translate-key="policy_deposit">Seña del 30% para confirmar reserva</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle mt-1 mr-2 text-amber-300"></i>
+                                    <span data-translate-key="policy_pets">Mascotas consultar</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="complejo" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-3xl md:text-4xl font-bold text-amber-900" data-translate-key="complejo_section_title">Nuestro Complejo</h2>
+                <p class="mt-6 text-lg text-gray-700 max-w-3xl mx-auto" data-translate-key="complejo_section_subtitle">Un entorno natural único con todas las comodidades para tu descanso.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="relative h-96 rounded-xl overflow-hidden shadow-lg">
+                        <img src="https://mil-piedras-cabins.hotels-argentina.net/data/Pics/OriginalPhoto/6891/689156/689156466/mil-piedras-cabins-potrerillos-pic-5.JPEG" 
+                             data-translate-key="alt_piscina_complejo"
+                             alt="Piscina del complejo Mil Piedras" 
+                             class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 text-white">
+                            <h3 class="text-xl font-bold"></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4 mt-4">
+                        <div class="relative h-40 rounded-xl overflow-hidden shadow">
+                            <img src="https://mil-piedras-cabins.hotels-argentina.net/data/Pics/OriginalPhoto/6687/668761/668761398/mil-piedras-cabins-potrerillos-pic-1.JPEG" 
+                                 data-translate-key="alt_area_comun_complejo"
+                                 alt="Área común del complejo" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                        <div class="relative h-40 rounded-xl overflow-hidden shadow">
+                            <img src="https://mil-piedras-cabins.hotels-argentina.net/data/Pics/OriginalPhoto/7439/743943/743943523/mil-piedras-cabins-potrerillos-pic-4.JPEG" 
+                                 data-translate-key="alt_arroyo_cerca_complejo"
+                                 alt="Arroyo cerca del complejo" 
+                                 class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold text-amber-900 mb-6" data-translate-key="complejo_facilities_title">Instalaciones del complejo</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-swimming-pool text-amber-700 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-amber-900" data-translate-key="facility_pool_title">Piscina</h4>
+                                <p class="text-gray-700" data-translate-key="facility_pool_desc">Piscina con zona de solarium y vista a las montañas. Abierta de noviembre a marzo.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-water text-amber-700 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-amber-900" data-translate-key="facility_stream_title">Arroyo</h4>
+                                <p class="text-gray-700" data-translate-key="facility_stream_desc">Acceso directo al arroyo Las Chacritas, ideal para días de calor y contacto con la naturaleza.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-umbrella-beach text-amber-700 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-amber-900" data-translate-key="facility_commonareas_title">Áreas comunes</h4>
+                                <p class="text-gray-700" data-translate-key="facility_commonareas_desc">Amplios jardines con mesas y bancos para disfrutar al aire libre, juegos infantiles y quincho comunitario.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-wifi text-amber-700 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-amber-900" data-translate-key="facility_connectivity_title">Conectividad</h4>
+                                <p class="text-gray-700" data-translate-key="facility_connectivity_desc">Wi-Fi gratuito en todo el complejo y estacionamiento cubierto para cada cabaña.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 bg-amber-50 rounded-xl p-6">
+                        <h4 class="font-bold text-lg text-amber-900 mb-4" data-translate-key="useful_info_title">Información útil</h4>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-clock text-amber-700 mt-1 mr-2"></i>
+                                <span data-translate-key="info_checkin">Ingreso: 12:00 a 22:00 hs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-clock text-amber-700 mt-1 mr-2"></i>
+                                <span data-translate-key="info_checkout">Egreso: hasta 10:00 hs</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-car text-amber-700 mt-1 mr-2"></i>
+                                <span data-translate-key="info_parking">Estacionamiento: 1 vehículo por cabaña</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-dog text-amber-700 mt-1 mr-2"></i>
+                                <span data-translate-key="info_pets">Mascotas: Consultar condiciones</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cafe" class="py-10 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-3xl md:text-4xl font-bold text-amber-900" data-translate-key="cafe_section_title">Café El Badén</h2>
+                <p class="mt-6 text-lg text-gray-700 max-w-3xl mx-auto" data-translate-key="cafe_section_subtitle">Nuestro acogedor café-bar inaugurado en Junio del 2024, donde la montaña se encuentra con el buen gusto</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                <div class="order-1 lg:order-1">
+                    <div class="relative h-96 rounded-xl overflow-hidden shadow-lg gallery-item">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" 
+                             data-translate-key="alt_interior_cafe"
+                             alt="Interior del Café El Badén" 
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+                
+                <div class="order-2 lg:order-2">
+                    <h3 class="text-2xl font-bold text-amber-900 mb-6" data-translate-key="cafe_ambience_title">Ambiente rústico con esencia mendocina</h3>
+                    <p class="text-gray-700 mb-6" data-translate-key="cafe_ambience_desc1">Café El Badén nace como un espacio cálido dentro de Cabañas Mil Piedras, donde los huéspedes y visitantes pueden disfrutar de una experiencia gastronómica, como en su propia casa, en un entorno de montaña.</p>
+                    <p class="text-gray-700 mb-6" data-translate-key="cafe_ambience_desc2">Con decoración rústica que combina madera, piedra y hierro, nuestro café ofrece un ambiente íntimo perfecto para desayunos abundantes y meriendas caseras.</p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-amber-700 mr-2"></i>
+                            <span data-translate-key="cafe_hours">Abierto de 10:00 a 19:00 hs</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-wifi text-amber-700 mr-2"></i>
+                            <span data-translate-key="cafe_wifi">Wi-Fi gratuito</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-utensils text-amber-700 mr-2"></i>
+                            <span data-translate-key="cafe_homemade">Elaboración propia</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-dog text-amber-700 mr-2"></i>
+                            <span data-translate-key="cafe_pet_friendly">Pet friendly</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ubicacion" class="py-10 bg-amber-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-3xl md:text-4xl font-bold text-amber-900" data-translate-key="location_section_title">Ubicación</h2>
+                <p class="mt-6 text-lg text-gray-700 max-w-3xl mx-auto" data-translate-key="location_section_subtitle">En el corazón de Potrerillos, a minutos de las principales atracciones turísticas.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start mb-12">
+                <div> <div class="map-container rounded-xl overflow-hidden shadow-lg">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22519.456386142487!2d-69.26734677387732!3d-32.96322560921461!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967dec5f5846a27d%3A0x1eb3643e0d34a6ce!2sCaba%C3%B1as%20Mil%20Piedras!5e0!3m2!1ses!2sar!4v1748459880423!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <div> <h3 class="text-2xl font-bold text-amber-900 mb-6" data-translate-key="location_how_to_arrive_title">Cómo llegar</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-bold text-lg text-amber-900 mb-2" data-translate-key="location_address_title">Dirección</h4>
+                            <p class="text-gray-700" data-translate-key="location_address_text">Av. Los Cóndores 5549, Potrerillos, Mendoza</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold text-lg text-amber-900 mb-2" data-translate-key="location_distances_title">Distancias</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-map-marker-alt text-amber-700 mt-1 mr-2"></i>
+                                    <span data-translate-key="location_distance1">80 km de Ciudad de Mendoza / Aeropuerto Internacional</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-map-marker-alt text-amber-700 mt-1 mr-2"></i>
+                                    <span data-translate-key="location_distance2">3 km del Embalse Potrerillos</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-map-marker-alt text-amber-700 mt-1 mr-2"></i>
+                                    <span data-translate-key="location_distance3">3.8 km del centro de Potrerillos</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-map-marker-alt text-amber-700 mt-1 mr-2"></i>
+                                    <span data-translate-key="location_distance4">6 km del Museo Fernando Fader</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 items-start">
+                <div> <h4 class="font-bold text-lg text-amber-900 mb-2" data-translate-key="location_recommendations_title">Recomendaciones</h4>
+                    <p class="text-gray-700" data-translate-key="location_recommendations_text">Se recomienda vehículo alto para acceder al complejo. En invierno, consultar estado de rutas y llevar cadenas para nieve.</p>
+                </div>
+                
+                <div> <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <h4 class="font-bold text-lg text-amber-900 mb-2" data-translate-key="location_transport_title">Transporte</h4>
+                        <p class="text-gray-700 mb-4" data-translate-key="location_transport_text">Podemos coordinar traslados desde/hacia Mendoza capital o aeropuerto (servicio con costo adicional).</p>
+                        <a href="#contacto" class="inline-block bg-amber-700 hover:bg-amber-800 text-white px-4 py-2 rounded-lg text-sm font-semibold transition" data-translate-key="location_transport_button">
+                            Consultar traslados
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="actividades" class="py-10 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-3xl md:text-4xl font-bold text-amber-900" data-translate-key="activities_section_title">Actividades en Potrerillos</h2>
+                <p class="mt-6 text-lg text-gray-700 max-w-3xl mx-auto" data-translate-key="activities_section_subtitle">Descubre las increíbles experiencias que puedes vivir durante tu estadía.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-amber-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://www.andes-vertical.com/wp-content/uploads/2024/06/cabalgatas-en-mendoza-.jpeg" 
+                             data-translate-key="alt_cabalgatas"
+                             alt="Cabalgatas en Potrerillos" 
+                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <div class="activity-icon text-center">
+                            <i class="fas fa-horse"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-amber-900 text-center mb-3" data-translate-key="activity1_title">Cabalgatas</h3>
+                        <p class="text-gray-700 text-center" data-translate-key="activity1_desc">Recorridos guiados por senderos de montaña con vistas panorámicas del valle y el dique.</p>
+                        <div class="mt-4 text-center">
+                            <span class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-semibold" data-translate-key="activity1_duration_prefix">Duración:</span> <span data-translate-key="activity1_duration_time">2-4 horas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-amber-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/e7/2b/b3/parque-termal-chorro.jpg?w=900&h=-1&s=1" 
+                             data-translate-key="alt_termas"
+                             alt="Termas Cacheuta" 
+                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <div class="activity-icon text-center">
+                            <i class="fas fa-hot-tub"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-amber-900 text-center mb-3" data-translate-key="activity2_title">Termas Cacheuta</h3>
+                        <p class="text-gray-700 text-center" data-translate-key="activity2_desc">A 30 minutos, disfruta de aguas termales con vista a la cordillera y spa de relax.</p>
+                        <div class="mt-4 text-center">
+                             <span class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-semibold" data-translate-key="activity2_duration_prefix">Duración:</span> <span data-translate-key="activity2_duration_time">Medio día</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-amber-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://blog.localadventures.mx/wp-content/uploads/2018/10/paraglide_alfredomoran_photo.jpg" 
+                             data-translate-key="alt_parapente"
+                             alt="Parapente en Potrerillos" 
+                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <div class="activity-icon text-center">
+                            <i class="fas fa-parachute-box"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-amber-900 text-center mb-3" data-translate-key="activity3_title">Parapente</h3>
+                        <p class="text-gray-700 text-center" data-translate-key="activity3_desc">Vuelos en parapente biplaza con instructores certificados. Vista aérea inolvidable.</p>
+                        <div class="mt-4 text-center">
+                             <span class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-semibold" data-translate-key="activity3_duration_prefix">Duración:</span> <span data-translate-key="activity3_duration_time">1-2 horas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-amber-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://thrillsyndicate.com/wp-content/uploads/2022/03/zipline-family-wide-2.jpg" 
+                             data-translate-key="alt_tirolesa"
+                             alt="Tirolesa en Potrerillos" 
+                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <div class="activity-icon text-center">
+                            <i class="fas fa-mountain"></i> </div>
+                        <h3 class="text-xl font-bold text-amber-900 text-center mb-3" data-translate-key="activity4_title">Tirolesa</h3>
+                        <p class="text-gray-700 text-center" data-translate-key="activity4_desc">Circuito de tirolesas sobre el valle de Potrerillos, con diferentes niveles de dificultad.</p>
+                        <div class="mt-4 text-center">
+                             <span class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-semibold" data-translate-key="activity4_duration_prefix">Duración:</span> <span data-translate-key="activity4_duration_time">2-3 horas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-amber-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://s1.abcstatics.com/media/bienestar/2020/01/29/trekking-kte--1248x698@abc.jpg" 
+                             data-translate-key="alt_trekking"
+                             alt="Trekking en Potrerillos" 
+                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <div class="activity-icon text-center">
+                            <i class="fas fa-hiking"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-amber-900 text-center mb-3" data-translate-key="activity5_title">Trekking</h3>
+                        <p class="text-gray-700 text-center" data-translate-key="activity5_desc">Senderos autoguiados y excursiones con guías locales a cerros, arroyos y miradores.</p>
+                        <div class="mt-4 text-center">
+                             <span class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-semibold" data-translate-key="activity5_duration_prefix">Duración:</span> <span data-translate-key="activity5_duration_time">2-6 horas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-amber-50 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://en.la-plagne.com/sites/default/files/styles/ogimage/public/sit/images/71756/20954411.jpg?itok=44_vsert" 
+                             data-translate-key="alt_rafting"
+                             alt="Rafting en Mendoza" 
+                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                    </div>
+                    <div class="p-6">
+                        <div class="activity-icon text-center">
+                            <i class="fas fa-water"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-amber-900 text-center mb-3" data-translate-key="activity6_title">Rafting</h3>
+                        <p class="text-gray-700 text-center" data-translate-key="activity6_desc">Descenso por el río Mendoza con diferentes niveles de dificultad (desde principiantes).</p>
+                        <div class="mt-4 text-center">
+                            <span class="inline-block bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-xs font-semibold" data-translate-key="activity6_duration_prefix">Duración:</span> <span data-translate-key="activity6_duration_time">Medio día</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <p class="text-lg text-gray-700 mb-6" data-translate-key="activities_help_text">¿Necesitas ayuda para organizar tus actividades?</p>
+                <a href="#contacto" class="inline-block bg-amber-700 hover:bg-amber-800 text-white px-6 py-3 rounded-lg font-semibold shadow-lg transition" data-translate-key="activities_contact_button">
+                    <i class="fas fa-envelope mr-2"></i> Contáctanos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-amber-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-3xl md:text-4xl text-amber-200 font-bold" data-translate-key="testimonials_section_title">Lo que dicen nuestros huéspedes</h2>
+                <p class="mt-6 text-lg max-w-3xl mx-auto" data-translate-key="testimonials_section_subtitle">Experiencias reales de quienes ya disfrutaron de Cabañas Mil Piedras.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" data-translate-key="alt_satisfied_client" alt="Cliente satisfecho" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-amber-900" data-translate-key="testimonial1_name">María González</h4>
+                            <div class="flex text-amber-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic" data-translate-key="testimonial1_quote">"Las cabañas son exactamente como en las fotos, incluso más lindas. La atención fue excelente y la ubicación es perfecta para desconectar. Volveremos seguro!"</p>
+                    <div class="mt-4 text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i> <span data-translate-key="testimonial1_date_month">Enero</span> <span data-translate-key="testimonial1_date_year">2023</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" data-translate-key="alt_satisfied_client_2" alt="Cliente satisfecho" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-amber-900" data-translate-key="testimonial2_name">Juan Pérez</h4>
+                            <div class="flex text-amber-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic" data-translate-key="testimonial2_quote">"Pasamos una semana espectacular con mi familia. Las cabañas tienen todo lo necesario, muy cómodas y limpias. Los niños no querían irse de la pileta y el arroyo."</p>
+                    <div class="mt-4 text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i> <span data-translate-key="testimonial2_date_month">Julio</span> <span data-translate-key="testimonial2_date_year">2022</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" data-translate-key="alt_satisfied_client_3" alt="Cliente satisfecho" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-amber-900" data-translate-key="testimonial3_name">Laura Martínez</h4>
+                            <div class="flex text-amber-500">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic" data-translate-key="testimonial3_quote">"Ideal para parejas buscando tranquilidad. El hogar a leña hace que las noches sean muy acogedoras. La atención de los dueños fue impecable, nos dieron excelentes recomendaciones."</p>
+                    <div class="mt-4 text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i> <span data-translate-key="testimonial3_date_month">Abril</span> <span data-translate-key="testimonial3_date_year">2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="section-title text-3xl md:text-4xl font-bold text-amber-900" data-translate-key="contact_section_title">Contacto</h2>
+                <p class="mt-6 text-lg text-gray-700 max-w-3xl mx-auto" data-translate-key="contact_section_subtitle">Estamos para ayudarte y responder todas tus consultas.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="contact-name" class="block text-gray-700 mb-2" data-translate-key="contact_form_name">Nombre</label>
+                                <input type="text" id="contact-name" class="w-full px-4 py-2 rounded-lg border border-amber-300 focus:border-amber-500 focus:ring-1 focus:ring-amber-500" data-translate-key="contact_form_name_placeholder" placeholder="">
+                            </div>
+                            <div>
+                                <label for="contact-email" class="block text-gray-700 mb-2" data-translate-key="contact_form_email">Email</label>
+                                <input type="email" id="contact-email" class="w-full px-4 py-2 rounded-lg border border-amber-300 focus:border-amber-500 focus:ring-1 focus:ring-amber-500" data-translate-key="contact_form_email_placeholder" placeholder="">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="contact-phone" class="block text-gray-700 mb-2" data-translate-key="contact_form_phone">Teléfono</label>
+                            <input type="tel" id="contact-phone" class="w-full px-4 py-2 rounded-lg border border-amber-300 focus:border-amber-500 focus:ring-1 focus:ring-amber-500" data-translate-key="contact_form_phone_placeholder" placeholder="">
+                        </div>
+                        
+                        <div>
+                            <label for="contact-subject" class="block text-gray-700 mb-2" data-translate-key="contact_form_subject">Asunto</label>
+                            <select id="contact-subject" class="w-full px-4 py-2 rounded-lg border border-amber-300 focus:border-amber-500 focus:ring-1 focus:ring-amber-500">
+                                <option value="" data-translate-key="contact_subject_option_select">Seleccionar asunto</option>
+                                <option value="reserva" data-translate-key="contact_subject_option_booking">Consulta sobre reservas</option>
+                                <option value="servicios" data-translate-key="contact_subject_option_services">Servicios y comodidades</option>
+                                <option value="actividades" data-translate-key="contact_subject_option_activities">Actividades y excursiones</option>
+                                <option value="grupos" data-translate-key="contact_subject_option_groups">Grupos y eventos</option>
+                                <option value="otros" data-translate-key="contact_subject_option_other">Otros</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="contact-message" class="block text-gray-700 mb-2" data-translate-key="contact_form_message">Mensaje</label>
+                            <textarea id="contact-message" rows="4" class="w-full px-4 py-2 rounded-lg border border-amber-300 focus:border-amber-500 focus:ring-1 focus:ring-amber-500" data-translate-key="contact_form_message_placeholder" placeholder=""></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary w-full py-3 rounded-lg text-white font-semibold text-lg shadow-lg" data-translate-key="contact_form_send_button">
+                            Enviar mensaje
+                        </button>
+                    </form>
+                </div>
+                
+                <div>
+                    <div class="bg-amber-50 rounded-xl p-8 h-full">
+                        <h3 class="text-2xl font-bold text-amber-900 mb-6" data-translate-key="contact_info_title">Información de contacto</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-amber-700"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-amber-900 mb-1" data-translate-key="contact_info_address_title">Dirección</h4>
+                                    <p class="text-gray-700" data-translate-key="contact_info_address_text">Av. Los Cóndores 5549, Potrerillos, Mendoza</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fab fa-whatsapp font-bold text-amber-700"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-amber-900 mb-1" data-translate-key="contact_info_phones_title">WhatsApp</h4>
+                                    <p class="text-gray-700" data-translate-key="contact_info_whatsapp">+549 261 627-8780 (Oscar)</p>
+                                    <p class="text-gray-700" data-translate-key="contact_info_landline">+549 261 645-6826 (Jessi)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-amber-700"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-amber-900 mb-1" data-translate-key="contact_info_email_title">Correo</h4>
+                                    <p class="text-gray-700" data-translate-key="contact_info_email1">janechristie3@yahoo.com.ca</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-amber-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock text-amber-700"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg text-amber-900 mb-1" data-translate-key="contact_info_hours_title">Horario de atención</h4>
+                                    <p class="text-gray-700" data-translate-key="contact_info_hours_weekdays">Lunes a viernes: 9:00 a 20:00 hs</p>
+                                    <p class="text-gray-700" data-translate-key="contact_info_hours_weekends">Sábados y domingos: 10:00 a 18:00 hs</p>
+                                </div>
+                            </div>
+                            
+                            <div class="pt-6">
+                                <h4 class="font-bold text-lg text-amber-900 mb-3" data-translate-key="contact_info_social_title">Seguinos en redes</h4>
+                                <div class="flex space-x-4">
+                                    <a href="https://www.facebook.com/profile.php?id=100064872573404" class="bg-amber-100 hover:bg-amber-200 w-10 h-10 rounded-full flex items-center justify-center text-amber-700 transition">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/cabanas_mil_piedras" class="bg-amber-100 hover:bg-amber-200 w-10 h-10 rounded-full flex items-center justify-center text-amber-700 transition">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="https://wa.link/aksay6" class="bg-amber-100 hover:bg-amber-200 w-10 h-10 rounded-full flex items-center justify-center text-amber-700 transition">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-amber-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h3 class="text-2xl font-bold text-amber-200 mb-4" data-translate-key="newsletter_title">Recibí nuestras ofertas especiales</h3>
+                <p class="mb-8 max-w-2xl mx-auto" data-translate-key="newsletter_subtitle">Suscribite a nuestro newsletter y enterate primero de promociones, descuentos y novedades.</p>
+                
+                <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                    <input type="email" data-translate-key="newsletter_email_placeholder" placeholder="Tu email" class="flex-grow px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-500">
+                    <button type="submit" class="bg-amber-900 hover:bg-amber-950 px-6 py-3 rounded-lg font-semibold shadow transition" data-translate-key="newsletter_subscribe_button">
+                        Suscribirme
+                    </button>
+                </form>
+                
+                <p class="mt-4 text-sm text-amber-200" data-translate-key="newsletter_privacy_note">No compartiremos tu información con terceros.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white text-amber-900 pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-lg text-amber-900 font-bold mb-4" data-translate-key="footer_brand_name">Cabañas Mil Piedras</h4>
+                    <p class="mb-4 text-amber-900" data-translate-key="footer_brand_desc">Alojamiento de montaña en Potrerillos, Mendoza. Experiencias únicas en contacto con la naturaleza.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=100064872573404" class="text-amber-900 hover:text-amber-900 transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/cabanas_mil_piedras" class="text-amber-900 hover:text-amber-900 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.link/aksay6" class="text-amber-900 hover:text-amber-900 transition">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg text-amber-900 font-bold mb-4" data-translate-key="footer_quicklinks_title">Enlaces rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-amber-900 hover:text-amber-700 transition" data-translate-key="footer_link_inicio">Inicio</a></li>
+                        <li><a href="#cabanas" class="text-amber-900 hover:text-amber-700 transition" data-translate-key="footer_link_cabanas">Cabañas</a></li>
+                        <li><a href="#complejo" class="text-amber-900 hover:text-amber-700 transition" data-translate-key="footer_link_complejo">Complejo</a></li>
+                        <li><a href="#actividades" class="text-amber-900 hover:text-amber-700 transition" data-translate-key="footer_link_actividades">Actividades</a></li>
+                        <li><a href="#ubicacion" class="text-amber-900 hover:text-amber-700 transition" data-translate-key="footer_link_ubicacion">Ubicación</a></li>
+                        <li><a href="#contacto" class="text-amber-900 hover:text-amber-700 transition" data-translate-key="footer_link_contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg text-amber-900 font-bold mb-4" data-translate-key="footer_info_title">Información</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2 text-amber-700"></i>
+                            <span data-translate-key="footer_info_address">Av. Los Cóndores 5549, Potrerillos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fab fa-whatsapp mt-1 mr-2 font-bold text-amber-700"></i>
+                            <a href="https://wa.me/5492616278780?"> <span data-translate-key="footer_info_phone">+549 261 627-8780 (Oscar)</span></a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fab fa-whatsapp mt-1 mr-2 font-bold text-amber-700"></i>
+                            <a href="https://wa.me/5492616456826?"> <span data-translate-key="footer_info_phone2">+549 261 645-6826 (Jessi)</span></a>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-2 text-amber-700"></i>
+                            <span data-translate-key="footer_info_email">info@milpiedras.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock mt-1 mr-2 text-amber-700"></i>
+                            <span data-translate-key="footer_info_checkin_checkout">Ingreso: 12-22h | Egreso: 10h</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4" data-translate-key="footer_payment_title">Medios de pago</h4>
+                    <div class="grid grid-cols-3 gap-3">
+                        <div class="bg-white p-2 rounded flex items-center justify-center">
+                            <i class="fab fa-cc-visa text-2xl text-blue-900"></i>
+                        </div>
+                        <div class="bg-white p-2 rounded flex items-center justify-center">
+                            <i class="fab fa-cc-mastercard text-2xl text-red-900"></i>
+                        </div>
+                        <div class="bg-white p-2 rounded flex items-center justify-center">
+                            <i class="fab fa-cc-amex text-2xl text-blue-600"></i>
+                        </div>
+                        <div class="bg-white p-2 rounded flex items-center justify-center">
+                            <i class="fas fa-money-bill-wave text-2xl text-green-700"></i>
+                        </div>
+                        <div class="bg-white p-2 rounded flex items-center justify-center">
+                            <i class="fas fa-university text-2xl text-gray-700"></i>
+                        </div>
+                        <div class="bg-white p-2 rounded flex items-center justify-center">
+                            <i class="fab fa-cc-paypal text-2xl text-blue-700"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pt-6 border-t border-amber-300 text-center text-sm text-amber-900">
+                <p data-translate-key="footer_copyright">© 2025 Cabañas Mil Piedras. Todos los derechos reservados.</p>
+                <p class="mt-2" data-translate-key="footer_design_note">Diseñado con <i class="fas fa-heart text-red-500"></i> para amantes de la naturaleza</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="back-to-top" class="fixed bottom-6 right-6 bg-amber-700 hover:bg-amber-800 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        const translations = {
+            es: {
+                page_title: "Cabañas Mil Piedras - Alojamiento en Potrerillos, Mendoza",
+                meta_description: "Disfruta de nuestras cabañas de tronco en Potrerillos, Mendoza. Cabañas totalmente equipadas con vista a la montaña y arroyo. Piscina, parrillas y naturaleza.",
+                meta_keywords: "cabañas Potrerillos, alojamiento Mendoza, cabañas de tronco, vacaciones en la montaña, turismo Potrerillos, cabañas con pileta",
+                brand_name: "Cabañas Mil Piedras",
+                nav_inicio: "Inicio",
+                nav_cabanas: "Cabañas",
+                nav_complejo: "Complejo",
+                nav_actividades: "Actividades",
+                nav_ubicacion: "Ubicación",
+                nav_contacto: "Contacto",
+                nav_inicio_mobile: "Inicio",
+                nav_cabanas_mobile: "Cabañas",
+                nav_complejo_mobile: "Complejo",
+                nav_actividades_mobile: "Actividades",
+                nav_ubicacion_mobile: "Ubicación",
+                nav_contacto_mobile: "Contacto",
+                hero_video_error: "Tu navegador no soporta video HTML5.",
+                hero_title: "Descubre la magia de Potrerillos",
+                hero_subtitle: "Cabañas de troncos y piedras con vista a las montañas y el arroyo. Experiencia única en contacto con la naturaleza.",
+                hero_button_reservar: '<i class="fas fa-calendar-check mr-2"></i> Reservar ahora',
+                hero_button_cafe: '<i class="fas fa-coffee mr-2"></i> Conoce nuestro café',
+                feature1_title: "Vistas impresionantes",
+                feature1_desc: "Disfruta de panorámicas únicas de la Cordillera de los Andes desde tu cabaña.",
+                feature2_title: "Hogar a leña",
+                feature2_desc: "Calidez y ambiente acogedor con nuestro hogar a leña en cada cabaña.",
+                feature3_title: "Piscina con vista",
+                feature3_desc: "Refréscate en nuestra piscina con vistas al paisaje mendocino.",
+                cabanas_section_title: "Nuestras Cabañas",
+                cabanas_section_subtitle: "Dos cabañas idénticas construidas en tronco, piedra y madera, diseñadas para brindar confort en medio de la naturaleza.",
+                alt_cabana_mil_piedras: "Cabaña de troncos Mil Piedras",
+                alt_cabana_mil_piedras_2: "Cabaña de troncos Mil Piedras",
+                cabana1_capacity: "Capacidad: 6 personas",
+                cabana1_title: "Cabaña Los Troncos",
+                cabana_bedrooms: "3 dormitorios",
+                cabana_bathroom: "Baño privado",
+                cabana_kitchen: "Cocina equipada",
+                cabana_tv: "TV satelital",
+                cabana1_desc: "Amplia cabaña de 65m² con terraza privada, parrilla y solárium. Distribución: 1 dormitorio matrimonial, 1 dormitorio con cucheta y cama simple, y sofá cama en living.",
+                cabana_price_suffix: "/noche (temporada baja)",
+                cabana_button_reservar: "Reservar",
+                cabana2_capacity: "Capacidad: 6 personas",
+                cabana2_title: "Cabaña Las Piedras",
+                cabana_bedrooms_2: "3 dormitorios", // Assuming same for both cabins, keys differentiated for safety
+                cabana_bathroom_2: "Baño privado",
+                cabana_kitchen_2: "Cocina equipada",
+                cabana_tv_2: "TV satelital",
+                cabana2_desc: "Hermosa cabaña de 65m² con vista al arroyo, terraza con parrilla y solárium. Distribución: 1 dormitorio matrimonial, 1 dormitorio con cucheta y cama simple, y sofá cama en living.",
+                cabana_price_suffix_2: "/noche (temporada baja)",
+                cabana_button_reservar_2: "Reservar",
+                services_included_title: "Servicios incluidos",
+                service_kitchen_title: "Cocina completa",
+                service_kitchen_desc: "Heladera, cocina, microondas, vajilla completa y utensilios de cocina.",
+                service_bedding_title: "Ropa de cama",
+                service_bedding_desc: "Sábanas, mantas y toallas incluidas para todos los huéspedes.",
+                service_heating_title: "Calefacción",
+                service_heating_desc: "Hogar a leña (incluye leña) y calefactores eléctricos.",
+                service_wifi_title: "Wi-Fi",
+                service_wifi_desc: "Internet gratuito en toda la propiedad.",
+                service_parking_title: "Estacionamiento",
+                service_parking_desc: "Lugar para estacionar comodamente por cabaña.",
+                service_grill_title: "Parrilla",
+                service_grill_desc: "Parrilla individual en cada cabaña con utensilios.",
+                reservas_section_title: "Reservas Online",
+                reservas_section_subtitle: "Consulta disponibilidad y reserva tu estadía directamente desde nuestro sistema.",
+                booking_form_title: "Solicitud de Reserva",
+                form_arrival_date: "Fecha de llegada",
+                form_departure_date: "Fecha de salida",
+                form_cabin: "Cabaña",
+                form_select_cabin_option: "Seleccionar cabaña",
+                form_cabin_option_troncos: "Los Troncos",
+                form_cabin_option_piedras: "Las Piedras",
+                form_persons: "Personas",
+                form_full_name: "Nombre completo",
+                form_full_name_placeholder: "Tu nombre completo",
+                form_email: "Email",
+                form_email_placeholder: "tuemail@example.com",
+                form_phone: "Teléfono",
+                form_phone_placeholder: "Tu número de teléfono",
+                form_message: "Mensaje adicional",
+                form_message_placeholder: "Escribe tu mensaje aquí...",
+                form_submit_button: "Consultar disponibilidad",
+                promotions_title: "Promociones",
+                promo1_title: "Estadía larga",
+                promo1_desc: "15% de descuento en reservas de 7 noches o más.",
+                promo2_title: "Temporada baja",
+                promo2_desc: "Tarifas especiales de marzo a noviembre (excepto vacaciones de invierno).",
+                promo3_title: "Pack aventura",
+                promo3_desc: "Incluye cabalgata guiada y descuento en Termas de Cacheuta.",
+                policies_title: "Políticas",
+                policy_checkin: "Ingreso: 12:00 a 22:00 hs",
+                policy_checkout: "Egreso: hasta 10:00 hs",
+                policy_deposit: "Seña del 30% para confirmar reserva",
+                policy_pets: "Mascotas consultar",
+                complejo_section_title: "Nuestro Complejo",
+                complejo_section_subtitle: "Un entorno natural único con todas las comodidades para tu descanso.",
+                alt_piscina_complejo: "Piscina del complejo Mil Piedras",
+                alt_area_comun_complejo: "Área común del complejo",
+                alt_arroyo_cerca_complejo: "Arroyo cerca del complejo",
+                complejo_facilities_title: "Instalaciones del complejo",
+                facility_pool_title: "Piscina",
+                facility_pool_desc: "Piscina con zona de solarium y vista a las montañas. Abierta de noviembre a marzo.",
+                facility_stream_title: "Arroyo",
+                facility_stream_desc: "Acceso directo al arroyo Las Chacritas, ideal para días de calor y contacto con la naturaleza.",
+                facility_commonareas_title: "Áreas comunes",
+                facility_commonareas_desc: "Amplios jardines con mesas y bancos para disfrutar al aire libre, juegos infantiles y quincho comunitario.",
+                facility_connectivity_title: "Conectividad",
+                facility_connectivity_desc: "Wi-Fi gratuito en todo el complejo y estacionamiento cubierto para cada cabaña.",
+                useful_info_title: "Información útil",
+                info_checkin: "Ingreso: 12:00 a 22:00 hs",
+                info_checkout: "Egreso: hasta 10:00 hs",
+                info_parking: "Estacionamiento: 1 vehículo por cabaña",
+                info_pets: "Mascotas: Consultar condiciones",
+                cafe_section_title: "Café El Badén",
+                cafe_section_subtitle: "Nuestro acogedor café-bar inaugurado en Junio del 2024, donde la montaña se encuentra con el buen gusto",
+                alt_interior_cafe: "Interior del Café El Badén",
+                cafe_ambience_title: "Ambiente rústico con esencia mendocina",
+                cafe_ambience_desc1: "Café El Badén nace como un espacio cálido dentro de Cabañas Mil Piedras, donde los huéspedes y visitantes pueden disfrutar de una experiencia gastronómica, como en su propia casa, en un entorno de montaña.",
+                cafe_ambience_desc2: "Con decoración rústica que combina madera, piedra y hierro, nuestro café ofrece un ambiente íntimo perfecto para desayunos abundantes y meriendas caseras.",
+                cafe_hours: "Abierto de 10:00 a 19:00 hs",
+                cafe_wifi: "Wi-Fi gratuito",
+                cafe_homemade: "Elaboración propia",
+                cafe_pet_friendly: "Pet friendly",
+                location_section_title: "Ubicación",
+                location_section_subtitle: "En el corazón de Potrerillos, a minutos de las principales atracciones turísticas.",
+                location_how_to_arrive_title: "Cómo llegar",
+                location_address_title: "Dirección",
+                location_address_text: "Av. Los Cóndores 5549, Potrerillos, Mendoza",
+                location_distances_title: "Distancias",
+                location_distance1: "80 km de Ciudad de Mendoza / Aeropuerto Internacional",
+                location_distance2: "3 km del Embalse Potrerillos",
+                location_distance3: "3.8 km del centro de Potrerillos",
+                location_distance4: "6 km del Museo Fernando Fader",
+                location_recommendations_title: "Recomendaciones",
+                location_recommendations_text: "Se recomienda vehículo alto para acceder al complejo. En invierno, consultar estado de rutas y llevar cadenas para nieve.",
+                location_transport_title: "Transporte",
+                location_transport_text: "Podemos coordinar traslados desde/hacia Mendoza capital o aeropuerto (servicio con costo adicional).",
+                location_transport_button: "Consultar traslados",
+                activities_section_title: "Actividades en Potrerillos",
+                activities_section_subtitle: "Descubre las increíbles experiencias que puedes vivir durante tu estadía.",
+                alt_cabalgatas: "Cabalgatas en Potrerillos",
+                activity1_title: "Cabalgatas",
+                activity1_desc: "Recorridos guiados por senderos de montaña con vistas panorámicas del valle y el dique.",
+                activity1_duration_prefix: "Duración:",
+                activity1_duration_time: "2-4 horas",
+                alt_termas: "Termas Cacheuta",
+                activity2_title: "Termas Cacheuta",
+                activity2_desc: "A 30 minutos, disfruta de aguas termales con vista a la cordillera y spa de relax.",
+                activity2_duration_prefix: "Duración:",
+                activity2_duration_time: "Medio día",
+                alt_parapente: "Parapente en Potrerillos",
+                activity3_title: "Parapente",
+                activity3_desc: "Vuelos en parapente biplaza con instructores certificados. Vista aérea inolvidable.",
+                activity3_duration_prefix: "Duración:",
+                activity3_duration_time: "1-2 horas",
+                alt_tirolesa: "Tirolesa en Potrerillos",
+                activity4_title: "Tirolesa",
+                activity4_desc: "Circuito de tirolesas sobre el valle de Potrerillos, con diferentes niveles de dificultad.",
+                activity4_duration_prefix: "Duración:",
+                activity4_duration_time: "2-3 horas",
+                alt_trekking: "Trekking en Potrerillos",
+                activity5_title: "Trekking",
+                activity5_desc: "Senderos autoguiados y excursiones con guías locales a cerros, arroyos y miradores.",
+                activity5_duration_prefix: "Duración:",
+                activity5_duration_time: "2-6 horas",
+                alt_rafting: "Rafting en Mendoza",
+                activity6_title: "Rafting",
+                activity6_desc: "Descenso por el río Mendoza con diferentes niveles de dificultad (desde principiantes).",
+                activity6_duration_prefix: "Duración:",
+                activity6_duration_time: "Medio día",
+                activities_help_text: "¿Necesitas ayuda para organizar tus actividades?",
+                activities_contact_button: '<i class="fas fa-envelope mr-2"></i> Contáctanos',
+                testimonials_section_title: "Lo que dicen nuestros huéspedes",
+                testimonials_section_subtitle: "Experiencias reales de quienes ya disfrutaron de Cabañas Mil Piedras.",
+                alt_satisfied_client: "Cliente satisfecho",
+                alt_satisfied_client_2: "Cliente satisfecho",
+                alt_satisfied_client_3: "Cliente satisfecho",
+                testimonial1_name: "María González",
+                testimonial1_quote: '"Las cabañas son exactamente como en las fotos, incluso más lindas. La atención fue excelente y la ubicación es perfecta para desconectar. Volveremos seguro!"',
+                testimonial1_date_month: "Enero",
+                testimonial1_date_year: "2023",
+                testimonial2_name: "Juan Pérez",
+                testimonial2_quote: '"Pasamos una semana espectacular con mi familia. Las cabañas tienen todo lo necesario, muy cómodas y limpias. Los niños no querían irse de la pileta y el arroyo."',
+                testimonial2_date_month: "Julio",
+                testimonial2_date_year: "2022",
+                testimonial3_name: "Laura Martínez",
+                testimonial3_quote: '"Ideal para parejas buscando tranquilidad. El hogar a leña hace que las noches sean muy acogedoras. La atención de los dueños fue impecable, nos dieron excelentes recomendaciones."',
+                testimonial3_date_month: "Abril",
+                testimonial3_date_year: "2023",
+                contact_section_title: "Contacto",
+                contact_section_subtitle: "Estamos para ayudarte y responder todas tus consultas.",
+                contact_form_name: "Nombre",
+                contact_form_name_placeholder: "Tu nombre",
+                contact_form_email: "Email",
+                contact_form_email_placeholder: "tuemail@example.com",
+                contact_form_phone: "Teléfono",
+                contact_form_phone_placeholder: "Tu teléfono",
+                contact_form_subject: "Asunto",
+                contact_subject_option_select: "Seleccionar asunto",
+                contact_subject_option_booking: "Consulta sobre reservas",
+                contact_subject_option_services: "Servicios y comodidades",
+                contact_subject_option_activities: "Actividades y excursiones",
+                contact_subject_option_groups: "Grupos y eventos",
+                contact_subject_option_other: "Otros",
+                contact_form_message: "Mensaje",
+                contact_form_message_placeholder: "Escribe tu mensaje...",
+                contact_form_send_button: "Enviar mensaje",
+                contact_info_title: "Información de contacto",
+                contact_info_address_title: "Dirección",
+                contact_info_address_text: "Av. Los Cóndores 5549, Potrerillos, Mendoza",
+                contact_info_phones_title: "WhatsApp",
+                contact_info_whatsapp: "+549 261 627-8780 (Oscar)",
+                contact_info_landline: "+549 261 645-6826 (Jessi)",
+                contact_info_email_title: "Correo",
+                contact_info_email1: "janechristie3@yahoo.com.ca",
+                contact_info_hours_title: "Horario de atención",
+                contact_info_hours_weekdays: "Lunes a viernes: 9:00 a 20:00 hs",
+                contact_info_hours_weekends: "Sábados y domingos: 10:00 a 18:00 hs",
+                contact_info_social_title: "Seguinos en redes",
+                newsletter_title: "Recibí nuestras ofertas especiales",
+                newsletter_subtitle: "Suscribite a nuestro newsletter y enterate primero de promociones, descuentos y novedades.",
+                newsletter_email_placeholder: "Tu email",
+                newsletter_subscribe_button: "Suscribirme",
+                newsletter_privacy_note: "No compartiremos tu información con terceros.",
+                footer_brand_name: "Cabañas Mil Piedras",
+                footer_brand_desc: "Alojamiento de montaña en Potrerillos, Mendoza. Experiencias únicas en contacto con la naturaleza.",
+                footer_quicklinks_title: "Enlaces rápidos",
+                footer_link_inicio: "Inicio",
+                footer_link_cabanas: "Cabañas",
+                footer_link_complejo: "Complejo",
+                footer_link_actividades: "Actividades",
+                footer_link_ubicacion: "Ubicación",
+                footer_link_contacto: "Contacto",
+                footer_info_title: "Información",
+                footer_info_address: "Av. Los Cóndores 5549, Potrerillos",
+                footer_info_phone: "+549 261 627-8780 (Oscar)",
+                footer_info_phone2: "+549 261 645-6826 (Jessi)",
+                footer_info_email: "info@milpiedras.com",
+                footer_info_checkin_checkout: "Ingreso: 12-22h | Egreso: 10h",
+                footer_payment_title: "Medios de pago",
+                footer_copyright: "© 2025 Cabañas Mil Piedras. Todos los derechos reservados.",
+                footer_design_note: 'Diseñado con <i class="fas fa-heart text-red-500"></i> para amantes de la naturaleza'
+            },
+            en: {
+                page_title: "Mil Piedras Cabins - Lodging in Potrerillos, Mendoza",
+                meta_description: "Enjoy our log cabins in Potrerillos, Mendoza. Fully equipped cabins with mountain and stream views. Pool, grills, and nature.",
+                meta_keywords: "Potrerillos cabins, Mendoza accommodation, log cabins, mountain holidays, Potrerillos tourism, cabins with pool",
+                brand_name: "Mil Piedras Cabins",
+                nav_inicio: "Home",
+                nav_cabanas: "Cabins",
+                nav_complejo: "Resort",
+                nav_actividades: "Activities",
+                nav_ubicacion: "Location",
+                nav_contacto: "Contact",
+                nav_inicio_mobile: "Home",
+                nav_cabanas_mobile: "Cabins",
+                nav_complejo_mobile: "Resort",
+                nav_actividades_mobile: "Activities",
+                nav_ubicacion_mobile: "Location",
+                nav_contacto_mobile: "Contact",
+                hero_video_error: "Your browser does not support HTML5 video.",
+                hero_title: "Discover the magic of Potrerillos",
+                hero_subtitle: "Log and stone cabins with views of the mountains and the stream. A unique experience in contact with nature.",
+                hero_button_reservar: '<i class="fas fa-calendar-check mr-2"></i> Book now',
+                hero_button_cafe: '<i class="fas fa-coffee mr-2"></i> Discover our café',
+                feature1_title: "Breathtaking views",
+                feature1_desc: "Enjoy unique panoramic views of the Andes Mountains from your cabin.",
+                feature2_title: "Wood-burning fireplace",
+                feature2_desc: "Warmth and a cozy atmosphere with our wood-burning fireplace in each cabin.",
+                feature3_title: "Pool with a view",
+                feature3_desc: "Refresh yourself in our pool overlooking the Mendoza landscape.",
+                cabanas_section_title: "Our Cabins",
+                cabanas_section_subtitle: "Two identical cabins built with logs, stone, and wood, designed to provide comfort in the midst of nature.",
+                alt_cabana_mil_piedras: "Mil Piedras Log Cabin",
+                alt_cabana_mil_piedras_2: "Mil Piedras Log Cabin",
+                cabana1_capacity: "Capacity: 6 people",
+                cabana1_title: "Los Troncos Cabin",
+                cabana_bedrooms: "3 bedrooms",
+                cabana_bathroom: "Private bathroom",
+                cabana_kitchen: "Equipped kitchen",
+                cabana_tv: "Satellite TV",
+                cabana1_desc: "Spacious 65m² cabin with private terrace, grill, and solarium. Layout: 1 double bedroom, 1 bedroom with bunk bed and single bed, and a sofa bed in the living room.",
+                cabana_price_suffix: "/night (low season)",
+                cabana_button_reservar: "Book",
+                cabana2_capacity: "Capacity: 6 people",
+                cabana2_title: "Las Piedras Cabin",
+                cabana_bedrooms_2: "3 bedrooms",
+                cabana_bathroom_2: "Private bathroom",
+                cabana_kitchen_2: "Equipped kitchen",
+                cabana_tv_2: "Satellite TV",
+                cabana2_desc: "Beautiful 65m² cabin overlooking the stream, with a terrace, grill, and solarium. Layout: 1 double bedroom, 1 bedroom with bunk bed and single bed, and a sofa bed in the living room.",
+                cabana_price_suffix_2: "/night (low season)",
+                cabana_button_reservar_2: "Book",
+                services_included_title: "Included Services",
+                service_kitchen_title: "Full kitchen",
+                service_kitchen_desc: "Refrigerator, stove, microwave, complete dinnerware, and kitchen utensils.",
+                service_bedding_title: "Linens",
+                service_bedding_desc: "Sheets, blankets, and towels included for all guests.",
+                service_heating_title: "Heating",
+                service_heating_desc: "Wood-burning fireplace (firewood included) and electric heaters.",
+                service_wifi_title: "Wi-Fi",
+                service_wifi_desc: "Free internet throughout the property.",
+                service_parking_title: "Parking",
+                service_parking_desc: "Comfortable parking space per cabin.",
+                service_grill_title: "Grill",
+                service_grill_desc: "Individual grill in each cabin with utensils.",
+                reservas_section_title: "Online Reservations",
+                reservas_section_subtitle: "Check availability and book your stay directly through our system.",
+                booking_form_title: "Reservation Request",
+                form_arrival_date: "Arrival date",
+                form_departure_date: "Departure date",
+                form_cabin: "Cabin",
+                form_select_cabin_option: "Select cabin",
+                form_cabin_option_troncos: "Los Troncos",
+                form_cabin_option_piedras: "Las Piedras",
+                form_persons: "Guests",
+                form_full_name: "Full name",
+                form_full_name_placeholder: "Your full name",
+                form_email: "Email",
+                form_email_placeholder: "youremail@example.com",
+                form_phone: "Phone",
+                form_phone_placeholder: "Your phone number",
+                form_message: "Additional message",
+                form_message_placeholder: "Write your message here...",
+                form_submit_button: "Check availability",
+                promotions_title: "Promotions",
+                promo1_title: "Long stay",
+                promo1_desc: "15% discount on reservations of 7 nights or more.",
+                promo2_title: "Low season",
+                promo2_desc: "Special rates from March to November (except winter holidays).",
+                promo3_title: "Adventure pack",
+                promo3_desc: "Includes guided horseback riding and discount at Termas de Cacheuta.",
+                policies_title: "Policies",
+                policy_checkin: "Check-in: 12:00 a 22:00 hs",
+                policy_checkout: "Check-out: until 10:00 hs",
+                policy_deposit: "30% deposit to confirm reservation",
+                policy_pets: "Pets: please inquire",
+                complejo_section_title: "Our Resort",
+                complejo_section_subtitle: "A unique natural environment with all the comforts for your rest.",
+                alt_piscina_complejo: "Mil Piedras Resort Pool",
+                alt_area_comun_complejo: "Resort common area",
+                alt_arroyo_cerca_complejo: "Stream near the resort",
+                complejo_facilities_title: "Resort Facilities",
+                facility_pool_title: "Pool",
+                facility_pool_desc: "Pool with solarium area and mountain views. Open from November to March.",
+                facility_stream_title: "Stream",
+                facility_stream_desc: "Direct access to Las Chacritas stream, ideal for hot days and contact with nature.",
+                facility_commonareas_title: "Common Areas",
+                facility_commonareas_desc: "Spacious gardens with tables and benches to enjoy outdoors, children's games, and a communal barbecue area.",
+                facility_connectivity_title: "Connectivity",
+                facility_connectivity_desc: "Free Wi-Fi throughout the resort and covered parking for each cabin.",
+                useful_info_title: "Useful Information",
+                info_checkin: "Check-in: 12:00 a 22:00 hs",
+                info_checkout: "Check-out: until 10:00 hs",
+                info_parking: "Parking: 1 vehicle per cabin",
+                info_pets: "Pets: Inquire about conditions",
+                cafe_section_title: "El Badén Café",
+                cafe_section_subtitle: "Our cozy café-bar, opened in June 2024, where the mountains meet good taste.",
+                alt_interior_cafe: "Interior of El Badén Café",
+                cafe_ambience_title: "Rustic ambiance with Mendoza essence",
+                cafe_ambience_desc1: "El Badén Café was born as a warm space within Mil Piedras Cabins, where guests and visitors can enjoy a gastronomic experience, as if you were at home, in a mountain setting.",
+                cafe_ambience_desc2: "With rustic decoration combining wood, stone, and iron, our café offers an intimate atmosphere perfect for hearty breakfasts and homemade snacks.",
+                cafe_hours: "Open from 10:00 AM to 7:00 PM",
+                cafe_wifi: "Free Wi-Fi",
+                cafe_homemade: "Homemade products",
+                cafe_pet_friendly: "Pet friendly",
+                location_section_title: "Location",
+                location_section_subtitle: "In the heart of Potrerillos, minutes from the main tourist attractions.",
+                location_how_to_arrive_title: "How to get here",
+                location_address_title: "Address",
+                location_address_text: "Av. Los Cóndores 5549, Potrerillos, Mendoza",
+                location_distances_title: "Distances",
+                location_distance1: "80 km from Mendoza City / International Airport",
+                location_distance2: "3 km from Potrerillos Dam",
+                location_distance3: "3.8 km from Potrerillos town center",
+                location_distance4: "6 km from Fernando Fader Museum",
+                location_recommendations_title: "Recommendations",
+                location_recommendations_text: "A high vehicle is recommended to access the resort. In winter, check road conditions and bring snow chains.",
+                location_transport_title: "Transport",
+                location_transport_text: "We can coordinate transfers to/from Mendoza city or airport (service with additional cost).",
+                location_transport_button: "Inquire about transfers",
+                activities_section_title: "Activities in Potrerillos",
+                activities_section_subtitle: "Discover the incredible experiences you can enjoy during your stay.",
+                alt_cabalgatas: "Horseback riding in Potrerillos",
+                activity1_title: "Horseback Riding",
+                activity1_desc: "Guided tours on mountain trails with panoramic views of the valley and the dam.",
+                activity1_duration_prefix: "Duration:",
+                activity1_duration_time: "2-4 hours",
+                alt_termas: "Cacheuta Hot Springs",
+                activity2_title: "Cacheuta Hot Springs",
+                activity2_desc: "30 minutes away, enjoy thermal waters overlooking the mountains and a relaxing spa.",
+                activity2_duration_prefix: "Duration:",
+                activity2_duration_time: "Half day",
+                alt_parapente: "Paragliding in Potrerillos",
+                activity3_title: "Paragliding",
+                activity3_desc: "Tandem paragliding flights with certified instructors. Unforgettable aerial view.",
+                activity3_duration_prefix: "Duration:",
+                activity3_duration_time: "1-2 hours",
+                alt_tirolesa: "Ziplining in Potrerillos",
+                activity4_title: "Ziplining",
+                activity4_desc: "Zipline circuit over the Potrerillos valley, with different difficulty levels.",
+                activity4_duration_prefix: "Duration:",
+                activity4_duration_time: "2-3 hours",
+                alt_trekking: "Trekking in Potrerillos",
+                activity5_title: "Trekking",
+                activity5_desc: "Self-guided trails and excursions with local guides to hills, streams, and viewpoints.",
+                activity5_duration_prefix: "Duration:",
+                activity5_duration_time: "2-6 hours",
+                alt_rafting: "Rafting in Mendoza",
+                activity6_title: "Rafting",
+                activity6_desc: "Descent on the Mendoza River with different difficulty levels (from beginners).",
+                activity6_duration_prefix: "Duration:",
+                activity6_duration_time: "Half day",
+                activities_help_text: "Need help organizing your activities?",
+                activities_contact_button: '<i class="fas fa-envelope mr-2"></i> Contact us',
+                testimonials_section_title: "What our guests say",
+                testimonials_section_subtitle: "Real experiences from those who have already enjoyed Mil Piedras Cabins.",
+                alt_satisfied_client: "Satisfied client",
+                alt_satisfied_client_2: "Satisfied client",
+                alt_satisfied_client_3: "Satisfied client",
+                testimonial1_name: "María González",
+                testimonial1_quote: '"The cabins are exactly as in the photos, even nicer. The service was excellent and the location is perfect to disconnect. We will definitely be back!"',
+                testimonial1_date_month: "January",
+                testimonial1_date_year: "2023",
+                testimonial2_name: "Juan Pérez",
+                testimonial2_quote: '"We had a spectacular week with my family. The cabins have everything you need, very comfortable and clean. The kids didn\'t want to leave the pool and the stream."',
+                testimonial2_date_month: "July",
+                testimonial2_date_year: "2022",
+                testimonial3_name: "Laura Martínez",
+                testimonial3_quote: '"Ideal for couples seeking tranquility. The wood-burning fireplace makes the nights very cozy. The owners\' attention was impeccable, they gave us excellent recommendations."',
+                testimonial3_date_month: "April",
+                testimonial3_date_year: "2023",
+                contact_section_title: "Contact",
+                contact_section_subtitle: "We are here to help you and answer all your questions.",
+                contact_form_name: "Name",
+                contact_form_name_placeholder: "Your name",
+                contact_form_email: "Email",
+                contact_form_email_placeholder: "youremail@example.com",
+                contact_form_phone: "Phone",
+                contact_form_phone_placeholder: "Your phone",
+                contact_form_subject: "Subject",
+                contact_subject_option_select: "Select subject",
+                contact_subject_option_booking: "Inquiry about reservations",
+                contact_subject_option_services: "Services and amenities",
+                contact_subject_option_activities: "Activities and excursions",
+                contact_subject_option_groups: "Groups and events",
+                contact_subject_option_other: "Other",
+                contact_form_message: "Message",
+                contact_form_message_placeholder: "Write your message...",
+                contact_form_send_button: "Send message",
+                contact_info_title: "Contact Information",
+                contact_info_address_title: "Address",
+                contact_info_address_text: "Av. Los Cóndores 5549, Potrerillos, Mendoza",
+                contact_info_phones_title: "WhatsApp",
+                contact_info_whatsapp: "+549 261 627-8780 (Oscar)",
+                contact_info_landline: "+549 261 645-6826 (Jessi)",
+                contact_info_email_title: "Email",
+                contact_info_email1: "janechristie3@yahoo.com.ca",
+                contact_info_hours_title: "Opening Hours",
+                contact_info_hours_weekdays: "Monday to Friday: 9:00 AM to 8:00 PM",
+                contact_info_hours_weekends: "Saturdays and Sundays: 10:00 AM to 6:00 PM",
+                contact_info_social_title: "Follow us",
+                newsletter_title: "Receive our special offers",
+                newsletter_subtitle: "Subscribe to our newsletter and be the first to know about promotions, discounts, and news.",
+                newsletter_email_placeholder: "Your email",
+                newsletter_subscribe_button: "Subscribe",
+                newsletter_privacy_note: "We will not share your information with third parties.",
+                footer_brand_name: "Mil Piedras Cabins",
+                footer_brand_desc: "Mountain lodging in Potrerillos, Mendoza. Unique experiences in contact with nature.",
+                footer_quicklinks_title: "Quick Links",
+                footer_link_inicio: "Home",
+                footer_link_cabanas: "Cabins",
+                footer_link_complejo: "Resort",
+                footer_link_actividades: "Activities",
+                footer_link_ubicacion: "Location",
+                footer_link_contacto: "Contact",
+                footer_info_title: "Information",
+                footer_info_address: "Av. Los Cóndores 5549, Potrerillos",
+                footer_info_phone: "+549 261 627-8780 (Oscar)",
+                footer_info_phone2: "+549 261 645-6826 (Jessi)",
+                footer_info_email: "info@milpiedras.com",
+                footer_info_checkin_checkout: "Check-in: 12-22h | Check-out: 10h",
+                footer_payment_title: "Payment Methods",
+                footer_copyright: "© 2025 Mil Piedras Cabins. All rights reserved.",
+                footer_design_note: 'Designed with <i class="fas fa-heart text-red-500"></i> for nature lovers'
+            }
+        };
+
+        let currentLanguage = localStorage.getItem('language') || 'es';
+
+        function setLanguage(lang) {
+            currentLanguage = lang;
+            localStorage.setItem('language', lang);
+            document.documentElement.lang = lang;
+            updateTextContent();
+            updateButtonStyles();
+            // Close mobile menu if open and a language is selected from mobile switcher (optional)
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (!mobileMenu.classList.contains('hidden')) {
+                 // mobileMenu.classList.add('hidden'); // Uncomment if you want menu to close on lang change
+            }
+        }
+
+        function updateButtonStyles() {
+            const langButtons = ['lang-es', 'lang-en', 'lang-es-mobile', 'lang-en-mobile'];
+            langButtons.forEach(id => {
+                const button = document.getElementById(id);
+                if (button) {
+                    const lang = id.includes('es') ? 'es' : 'en';
+                    button.classList.toggle('font-bold', currentLanguage === lang);
+                    button.classList.toggle('text-amber-700', currentLanguage === lang); // Highlight active language
+                    button.classList.toggle('text-amber-900', currentLanguage !== lang); 
+                }
+            });
+        }
+        
+        function updateTextContent() {
+            document.querySelectorAll('[data-translate-key]').forEach(element => {
+                const key = element.getAttribute('data-translate-key');
+                const translation = translations[currentLanguage] && translations[currentLanguage][key];
+
+                if (translation !== undefined) {
+                    if (element.tagName === 'TITLE') {
+                        document.title = translation;
+                    } else if (element.tagName === 'META' && element.getAttribute('name') === 'description') {
+                        element.content = translation;
+                    } else if (element.tagName === 'META' && element.getAttribute('name') === 'keywords') {
+                        element.content = translation;
+                    } else if ((element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') && element.hasAttribute('placeholder')) {
+                        element.placeholder = translation;
+                    } else if (element.tagName === 'IMG' && element.hasAttribute('alt')) {
+                        element.alt = translation;
+                    } else {
+                        element.innerHTML = translation; // Use innerHTML to support icons within text
+                    }
+                } else {
+                    // console.warn(`No translation found for key: ${key} in language: ${currentLanguage}`);
+                    // Fallback to Spanish if key is missing for current language, but present in Spanish
+                    const fallbackTranslation = translations.es[key];
+                    if (fallbackTranslation !== undefined) {
+                        if (element.tagName === 'TITLE') {
+                             document.title = fallbackTranslation;
+                        } else if (element.tagName === 'META' && element.getAttribute('name') === 'description') {
+                            element.content = fallbackTranslation;
+                        } else if (element.tagName === 'META' && element.getAttribute('name') === 'keywords') {
+                            element.content = fallbackTranslation;
+                        } else if ((element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') && element.hasAttribute('placeholder')) {
+                            element.placeholder = fallbackTranslation;
+                        } else if (element.tagName === 'IMG' && element.hasAttribute('alt')) {
+                            element.alt = fallbackTranslation;
+                        } else {
+                            element.innerHTML = fallbackTranslation;
+                        }
+                    } else {
+                        console.warn(`No translation or fallback found for key: ${key}`);
+                    }
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Desktop language buttons
+            document.getElementById('lang-es').addEventListener('click', () => setLanguage('es'));
+            document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
+            // Mobile language buttons
+            document.getElementById('lang-es-mobile').addEventListener('click', () => setLanguage('es'));
+            document.getElementById('lang-en-mobile').addEventListener('click', () => setLanguage('en'));
+            
+            setLanguage(currentLanguage); // Apply initial language
+
+            // Mobile menu toggle (existing script)
+            document.getElementById('menu-toggle').addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.toggle('hidden');
+            });
+
+            // Back to top button (existing script)
+            const backToTopButton = document.getElementById('back-to-top');
+            if (backToTopButton) { // Ensure button exists
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 300) {
+                        backToTopButton.classList.remove('opacity-0', 'invisible');
+                        backToTopButton.classList.add('opacity-100', 'visible');
+                    } else {
+                        backToTopButton.classList.remove('opacity-100', 'visible');
+                        backToTopButton.classList.add('opacity-0', 'invisible');
+                    }
+                });
+            }
+
+            // Smooth scrolling for anchor links (existing script)
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#' && this.id === 'back-to-top') { // Special case for back-to-top
+                         window.scrollTo({ top: 0, behavior: 'smooth' });
+                         return;
+                    }
+                    if (targetId === '#' || !targetId.startsWith('#')) return; // Ignore empty or non-anchor links
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80, // Adjusted for fixed header
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        if (!document.getElementById('mobile-menu').classList.contains('hidden')) {
+                            document.getElementById('mobile-menu').classList.add('hidden');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
